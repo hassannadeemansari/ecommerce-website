@@ -30,7 +30,7 @@ export default function AllProducts(){
               <div className="flex mx-auto items-center h-11">
                   <div className="flex gap-5 font-sans text-gray-500 mx-auto">
                       <a href="Product">Products List</a>
-                      <a>plants pots</a>
+                      <a>plant pots</a>
                       <a>Ceramics</a>
                       <a>Tables</a>
                       <a>Chairs</a>
