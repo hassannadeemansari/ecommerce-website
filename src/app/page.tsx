@@ -7,7 +7,6 @@ import { FaTruckFast } from "react-icons/fa6";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { MdOutlineInbox } from "react-icons/md";
 import { PiPlantDuotone } from "react-icons/pi";
-import { DiHeroku } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
@@ -24,10 +23,10 @@ export default function Home() {
       <header>
         <div className="flex justify-between w-[90%] 2xl:w-[1580px] bg mx-auto h-[7vh] items-center">
           <div><a href='AllProducts'><CiSearch /></a></div>
-          <h1><a href="/">Avion</a></h1>
+          <h1><Link href="/">Avion</Link></h1>
           <div className="flex gap-5">
-            <div><a href="/Shopping"><IoCartOutline /></a></div>
-            <div><a href="/Sign"><MdOutlineAccountCircle /></a></div>
+            <div><Link href="/Shopping"><IoCartOutline /></Link></div>
+            <div><Link href="/Sign"><MdOutlineAccountCircle /></Link></div>
           </div>
         </div>
         <div className="2xl:w-[1500px] w-[90%] border-b-2 mx-auto" />
@@ -68,7 +67,7 @@ export default function Home() {
             </div>
 
             <div className="w-[45%] h-auto ">
-              <img src="hero.png" alt="Description" className="w-[100%] h-[100%] object-cover object-fill " />
+              <Image src="hero.png" alt="Description" className="w-[100%] h-[100%] object-cover object-fill " />
             </div>
           </div>
         </div>
@@ -142,29 +141,29 @@ export default function Home() {
         <div className="w-[90%] 2xl:w-[1600px] h-[50vh] mx-auto flex items-center justify-center">
           <div className="w-[85%] h-[85%] flex justify-center items-center gap-5 flex-wrap ">
             <div className="w-[40%] 2xl:w-[300px] h-[100%] overflow-hidden">
-              <img className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero.png" alt="cart1" /><br />
+              <Image className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero.png" alt="cart1" /><br />
               <p>The Dandy chair</p>
               <p>£250</p>
             </div>
             <div className="w-[40%] 2xl:w-[300px] h-[100%] overflow-hidden">
-              <img className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero2.png" alt="cart2" /><br />
+              <Image className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero2.png" alt="cart2" /><br />
               <p>Rustic Vase Set</p>
               <p>£155</p>
             </div>
             <div className="w-[40%] 2xl:w-[300px] h-[100%]  overflow-hidden">
-              <img className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero3.png" alt="cart3" /><br />
+              <Image className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero3.png" alt="cart3" /><br />
               <p>The Silky Vase</p>
               <p>£125</p>
             </div>
             <div className="w-[40%] 2xl:w-[300px] h-[100%] overflow-hidden">
-              <img className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero4.png" alt="cart4" /><br />
+              <Image className="w-[100%] h-[79%] object-cover object-center object-fill" src="hero4.png" alt="cart4" /><br />
               <p>The Lucy Lamp</p>
               <p>£399</p>
             </div>
           </div>
         </div>
 
-        <div className="flex mx-auto justify-center 2xl:mt-[10px] mt-[450px]"><button className="bg-gray-300 h-12 w-[14%]"><a href="/AllProducts">View Collection</a></button></div>
+        <div className="flex mx-auto justify-center 2xl:mt-[10px] mt-[450px]"><button className="bg-gray-300 h-12 w-[14%]"><Link href="/AllProducts">View Collection</Link></button></div>
       </div>
 
       {/* cards */}
@@ -176,23 +175,23 @@ export default function Home() {
         <div className="w-[98%] 2xl:w-[1600px] h-[83vh]  mx-auto flex items-center">
           <div className="w-[87%] h-[86%] mx-auto flex items-center gap-5">
             <div className="w-[47%] h-[90%]">
-              <img className="w-[100%] h-[80%] object-cover object-center object-fill" src="card1.jpg" alt="c1" /><br />
+              <Image className="w-[100%] h-[80%] object-cover object-center object-fill" src="card1.jpg" alt="c1" /><br />
               <p>The Poplar suede sofa</p>
               <p>£250</p>
             </div>
             <div className="w-[47%] h-[90%]">
-              <img className="w-[100%] h-[80%] object-cover object-center object-fill" src="hero.png" alt="c2" /><br />
+              <Image className="w-[100%] h-[80%] object-cover object-center object-fill" src="hero.png" alt="c2" /><br />
               <p>The Dandy chair</p>
               <p>£250</p>
             </div>
             <div className="w-[47%] h-[90%]">
-              <img className="w-[100%] h-[80%] object-cover object-center object-fill" src="card3.png" alt="c3" /><br />
+              <Image className="w-[100%] h-[80%] object-cover object-center object-fill" src="card3.png" alt="c3" /><br />
               <p>The Dandy chair</p>
               <p>£980</p>
             </div>
           </div>
         </div>
-        <div className="flex mx-auto justify-center 2xl:mt-[-80px]"><button className="bg-gray-300 h-12 w-[14%]"><a href="/AllProducts">View Collection</a></button></div>
+        <div className="flex mx-auto justify-center 2xl:mt-[-80px]"><button className="bg-gray-300 h-12 w-[14%]"><Link href="/AllProducts">View Collection</Link></button></div>
       </div>
       <br />
       <br />
@@ -220,7 +219,7 @@ export default function Home() {
                   </div>
 
                   <div className="w-[52%] h-full">
-                     <img className="w-[100%] h-[100%] object-cover object-center object-fill"  src="last.png" alt="menu" />
+                     <Image className="w-[100%] h-[100%] object-cover object-center object-fill"  src="last.png" alt="menu" />
                   </div>
                   
            </div>
@@ -241,7 +240,7 @@ export default function Home() {
                            </div>
                            <div className="flex gap-2 justify-center">
                                 <input className="h-[6vh] w-[30%] bg-gray-200" type="text" placeholder="your@gmail.com" />  
-                                <button className="h-[6vh] w-[18%] bg-primary text-white"><a href="/Sign">Sign Up</a></button>
+                                <button className="h-[6vh] w-[18%] bg-primary text-white"><Link href="/Sign">Sign Up</Link></button>
                            </div>
                       </div>
                   </div>

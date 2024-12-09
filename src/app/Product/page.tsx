@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaSkype } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
+import Image from 'next/image';
 
 const products = [
   { id: 1, name: 'Modern Chair', price: '$120', image: '/hero.png' },
@@ -69,7 +70,7 @@ export default function Product() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 className="w-full h-56 object-cover"

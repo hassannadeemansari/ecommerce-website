@@ -8,6 +8,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaSkype } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
+import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -19,10 +21,10 @@ export default function AllProducts(){
          <header>
               <div className="flex justify-between w-[90%] 2xl:w-[1580px] bg mx-auto h-[7vh] items-center">
                   <div><CiSearch /></div>
-                  <h1 className="2xl:text-2xl"><a href="/">Avion</a></h1>
+                  <h1 className="2xl:text-2xl"><Link href="/">Avion</Link></h1>
                      <div className="flex gap-5">
-                     <div><a href="/Shopping"><IoCartOutline /></a></div>
-                     <div><a href="/Sign"><MdOutlineAccountCircle/></a></div>
+                     <div><Link href="/Shopping"><IoCartOutline /></Link></div>
+                     <div><Link href="/Sign"><MdOutlineAccountCircle/></Link></div>
                      </div>
               </div>
               <div className="2xl:w-[1600px] w-[90%] border-b-2 mx-auto" />
@@ -43,7 +45,7 @@ export default function AllProducts(){
 
 
          <main className="w-[99%] 2xl:w-[1600px] 2xl:h-[35vh] bg-black mx-auto">
-               <img className="w-full h-full object-cover object-fill" src="AllProducts1.png" alt="back" />
+               <Image className="w-full h-full object-cover object-fill" src="AllProducts1.png" alt="back" />
          </main>
          <div className="h-12 w-[100%] mx-auto"></div>
 
@@ -63,7 +65,7 @@ export default function AllProducts(){
                    { img: "hero3.png", name: "The Lucy Lamp", price: "£399" },
                  ].map((product, index) => (
                    <div key={index} className="flex flex-col items-center text-center">
-                     <img
+                     <Image
                         className="w-full h-[200px] object-cover mb-2 rounded-md"
                        src={product.img}
                          alt={product.name}
@@ -109,7 +111,7 @@ export default function AllProducts(){
         {/* Our Company Section */}
         <div className="font-sans flex flex-col gap-3 text-center sm:text-left w-full sm:w-auto">
             <h1 className="text-xl sm:text-2xl">Our Company</h1>
-            <div><a href="/About">About Us</a></div>
+            <div><Link href="/About">About Us</Link></div>
             <div><a>Vacancies</a></div>
             <div><a>Contact Us</a></div>
             <div><a>Privacy</a></div>
@@ -125,7 +127,7 @@ export default function AllProducts(){
                     placeholder="your@gmail.com" 
                     type="text" 
                 />
-                <button className="h-[7vh] w-full sm:w-[160px] bg-white text-primary"><a href="/Sign">Sign Up</a></button>
+                <button className="h-[7vh] w-full sm:w-[160px] bg-white text-primary"><Link href="/Sign">Sign Up</Link></button>
             </div>
         </div>
 
@@ -145,30 +147,6 @@ export default function AllProducts(){
 
     </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
          {/* <div className="2xl:w-[1600px] w-[99%] h-[50vh] bg-orange-400 mx-auto flex justify-center items-center">
