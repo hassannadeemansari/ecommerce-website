@@ -145,7 +145,7 @@ const ShoppingBasket = () => {
             <div><a>Furniture</a></div>
             <div><a>Homeware</a></div>
              <div><a>Plant pots</a></div>
-            <div><a>Chairs</a></div>
+            <div><a>Chair</a></div>
             <div><a>Crockery</a></div>
         </div>
 
@@ -162,7 +162,7 @@ const ShoppingBasket = () => {
 
         {/* Mailing List Section */}
         <div className="flex flex-col items-center gap-3 w-full sm:w-auto">
-            <p className="text-lg sm:text-xl">Join our mailing list</p>
+            <p className="text-lg sm:text-xl">Join Our mailing list</p>
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
                 <input 
                     className="w-full sm:w-[380px] h-[7vh] bg-white opacity-[0.4] text-black px-3 py-2" 
