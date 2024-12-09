@@ -14,6 +14,7 @@ import { FaSkype } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import Link from "next/link";
 
 
 
@@ -24,20 +25,20 @@ export default function About(){
 
           <div className="flex w-[90%] 2xl:w-[1580px]  mx-auto h-[6vh] items-center bg-primary text-white justify-center">
                <p>Free delivery on all orders over £50 with code easter checkout</p>
-               <div><ImCross /></div>
+               <div className="flex justify-end"><ImCross /></div>
           </div>
 
              <header>
               <div className="flex w-[90%] 2xl:w-[1580px]  mx-auto h-[7vh] items-center justify-between">
-              <a href="/" className="2xl:text-2xl">Avion</a>
-                  <div className="flex gap-6">
+              <Link href="/" className="2xl:text-2xl">Avion</Link>
+              <div className="flex gap-6">
                         <a href="/About">About Us</a>
                         <a href="/Product">Product List</a>
                         <a>Contact</a>
                         <a>Blog</a>
                       <div className="flex gap-4">
-                      <div><a href="/Shopping"><IoCartOutline /></a></div>
-                      <div><a href="/Sign"><MdOutlineAccountCircle/></a></div>
+                      <div><Link href="/Shopping"><IoCartOutline /></Link></div>
+                      <div><Link href="/Sign"><MdOutlineAccountCircle/></Link></div>
                         <div><CiSearch /></div>
                       </div>
                    </div>
@@ -46,7 +47,7 @@ export default function About(){
 
               <div className="flex mx-auto items-center h-11">
                   <div className="flex gap-5 font-sans text-gray-500 mx-auto">
-                      <a href="/AllProducts">All Products</a>
+                      <Link href="/AllProducts">All Products</Link>
                       <a>plants pots</a>
                       <a>Ceramics</a>
                       <a>Tables</a>
@@ -86,7 +87,7 @@ export default function About(){
                                           <p className="2xl:text-3xl text:sm">The furniture brand for the future, with timeless designs</p>
                                         </div><br/>
                                         <div>
-                                           <button className="bg-gray-500 h-12 w-[21%]"><a href="/AllProducts">View Collection</a></button>
+                                           <button className="bg-gray-500 h-12 w-[21%]"><Link href="/AllProducts">View Collection</Link></button>
                                         </div>
                                    </div>
                                    <div>       
@@ -103,7 +104,7 @@ export default function About(){
                          </div>
 
                                                        <div className="w-[45%] h-auto ">
-                              <img src="About1.png" alt="Description" className="w-[100%] h-[100%]  object-cover object-fill " />
+                              <Image src="About1.png" alt="Description" className="w-[100%] h-[100%]  object-cover object-fill " />
                               </div>
 
                     </div>
@@ -118,7 +119,7 @@ export default function About(){
 
 
                   <div className="2xl:w-[52%] 2xl:h-[70vh]  w-[40%] h-[52vh] mt-12">
-                     <img className="w-[100%] h-[100%] object-cover object-center object-fill"  src="About2.png" alt="menu" />
+                     <Image className="w-[100%] h-[100%] object-cover object-center object-fill"  src="About2.png" alt="menu" />
                   </div>
 
 
@@ -226,7 +227,7 @@ export default function About(){
                            </div>
                            <div className="flex gap-2 justify-center">
                                 <input className="h-[6vh] w-[30%] bg-gray-200" type="text" placeholder="your@gmail.com" />  
-                                <button className="h-[6vh] w-[18%] bg-primary text-white"><a href="/Sign">Sign Up</a></button>
+                                <button className="h-[6vh] w-[18%] bg-primary text-white"><Link href="/Sign">Sign Up</Link></button>
                            </div>
                       </div>
                   </div>
@@ -270,7 +271,7 @@ export default function About(){
             <div><a>Best Sellers</a></div>
             <div><a>Recently Viewed</a></div>
             <div><a>Popular This Week</a></div>
-            <div><a href="/AllProducts">All Products</a></div>
+            <div><Link href="/AllProducts">All Products</Link></div>
                   </div>
 
     {/* Categories Section */}
@@ -287,7 +288,7 @@ export default function About(){
    {/* Our Company Section */}
                   <div className="font-sans flex flex-col gap-3 text-center sm:text-left w-full sm:w-auto">
             <h1 className="text-xl sm:text-2xl">Our Company</h1>
-            <div><a href="/About">About Us</a></div>
+            <div><Link href="/About">About Us</Link></div>
             <div><a>Vacancies</a></div>
             <div><a>Contact Us</a></div>
             <div><a>Privacy</a></div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const SignUp = () => {
   return (
@@ -60,9 +61,9 @@ const SignUp = () => {
         {/* Sign-In Link */}
         <p className="text-center text-gray-600 mt-4">
           Already have an account?{' '}
-          <a href="/sign-in" className="text-purple-600 hover:underline">
+          <Link href="/sign-in" className="text-purple-600 hover:underline">
             Sign In
-          </a>
+          </Link>
         </p>
       </div>
     </div>
@@ -70,3 +71,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+

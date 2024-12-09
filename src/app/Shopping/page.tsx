@@ -8,8 +8,8 @@ import { CiSearch } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import React from 'react';
-
-
+import Link from 'next/link';
+import Image from 'next/image';
 
 const ShoppingBasket = () => {
   return (
@@ -18,14 +18,14 @@ const ShoppingBasket = () => {
 
 <header>
               <div className="flex w-[90%] 2xl:w-[1580px] bg mx-auto h-[7vh] items-center justify-between">
-              <a href="/" className="2xl:text-2xl">Avion</a>
+              <Link href="/" className="2xl:text-2xl">Avion</Link>
                   <div className="flex gap-6">
-                        <a href="/About">About Us</a>
+                        <Link href="/About">About Us</Link>
                         <a>Contact</a>
-                        <a href="Product">Blog</a>
+                        <Link href="/Product">Blog</Link>
                       <div className="flex gap-4">
-                      <div><a href="/Shopping"><IoCartOutline /></a></div>
-                      <div><a href="/Sign"><MdOutlineAccountCircle/></a></div>
+                      <div><Link href="/Shopping"><IoCartOutline /></Link></div>
+                      <div><Link href="/Sign"><MdOutlineAccountCircle/></Link></div>
                         <div><CiSearch /></div>
                       </div>
                    </div>
@@ -34,7 +34,7 @@ const ShoppingBasket = () => {
 
               <div className="flex mx-auto items-center h-11">
                   <div className="flex gap-5 font-sans text-gray-500 mx-auto">
-                      <a href="/AllProducts">All Products</a>
+                      <Link href="/AllProducts">All Products</Link>
                       <a>plants pots</a>
                       <a>Ceramics</a>
                       <a>Tables</a>
@@ -65,10 +65,12 @@ const ShoppingBasket = () => {
             {/* Product 1 */}
             <tr className="border-b">
               <td className="py-4 px-4 flex items-center">
-                <img
-                  src="hero.png"
+                <Image
+                  src="/hero.png"
                   alt="Graystone Vase"
-                  className="w-16 h-16 object-cover mr-4"
+                  width={64}
+                  height={64}
+                  className="object-cover mr-4"
                 />
                 <div>
                   <p className="font-semibold">Graystone Vase</p>
@@ -88,10 +90,12 @@ const ShoppingBasket = () => {
             {/* Product 2 */}
             <tr className="border-b">
               <td className="py-4 px-4 flex items-center">
-                <img
-                  src="hero2.png"
+                <Image
+                  src="/hero2.png"
                   alt="Basic White Vase"
-                  className="w-16 h-16 object-cover mr-4"
+                  width={64}
+                  height={64}
+                  className="object-cover mr-4"
                 />
                 <div>
                   <p className="font-semibold">Basic White Vase</p>
@@ -135,7 +139,7 @@ const ShoppingBasket = () => {
             <div><a>Best Sellers</a></div>
             <div><a>Recently Viewed</a></div>
             <div><a>Popular This Week</a></div>
-            <div><a href="/AllProducts">All Products</a></div>
+            <div><Link href="/AllProducts">All Products</Link></div>
         </div>
 
  {/* Categories Section */}
@@ -152,12 +156,12 @@ const ShoppingBasket = () => {
         {/* Our Company Section */}
         <div className="font-sans flex flex-col gap-3 text-center sm:text-left w-full sm:w-auto">
             <h1 className="text-xl sm:text-2xl">Our Company</h1>
-             <div><a href="/About">About Us</a></div>
+             <div><Link href="/About">About Us</Link></div>
             <div><a>Vacancies</a></div>
             <div><a>Contact Us</a></div>
              <div><a>Privacy</a></div>
             <div><a>Returns Policy</a></div>
-            <div><a href="Product">Products List </a></div>
+            <div><Link href="/Product">Products List </Link></div>
         </div>
 
         {/* Mailing List Section */}
@@ -169,7 +173,7 @@ const ShoppingBasket = () => {
                     placeholder="your@gmail.com" 
                     type="text" 
                 />
-                <button className="h-[7vh] w-full sm:w-[160px] bg-white text-primary"><a href="/Sign">Sign Up</a></button>
+                <button className="h-[7vh] w-full sm:w-[160px] bg-white text-primary"><Link href="/Sign">Sign Up</Link></button>
             </div>
         </div>
 
