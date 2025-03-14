@@ -42,13 +42,13 @@ export default function Product() {
             </div>
           </div>
         </div>
+        
         <div className="2xl:w-[1500px] w-[90%] border-b-2 mx-auto" />
-
         <div className="flex mx-auto items-center h-11">
           <div className="flex gap-5 font-sans text-gray-500 mx-auto">
             <Link href="/AllProducts">All Products</Link>
             <Link href="/Product">Product List</Link>
-            <a>plants pots</a>
+            <Link href="/Plantspots" className="hover:text-primary transition duration-200">Plants Pots</Link>
             <a>Ceramics</a>
             <a>Tables</a>
             <a>Chairs</a>
@@ -71,6 +71,7 @@ export default function Product() {
           {products.map((product) => (
             <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
               <Image
+              width={500} height={500}
                 src={product.image}
                 alt={product.name}
                 className="w-full h-56 object-cover"

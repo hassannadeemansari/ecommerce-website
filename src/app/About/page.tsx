@@ -29,8 +29,8 @@ export default function About(){
           </div>
 
              <header>
-              <div className="flex w-[90%] 2xl:w-[1580px]  mx-auto h-[7vh] items-center justify-between">
-              <Link href="/" className="2xl:text-2xl">Avion</Link>
+              <div className="flex sm:flex-row flex-col w-[90%] 2xl:w-[1580px]  mx-auto h-[7vh] items-center justify-between">
+              <Link href="/" className="sm:text-2xl text-3xl sm:mt-0 mt-5 sm:mb-0 mb-3">Avion</Link>
               <div className="flex gap-6">
                         <a href="/About">About Us</a>
                         <a href="/Product">Product List</a>
@@ -45,10 +45,10 @@ export default function About(){
               </div>
               <div className="2xl:w-[1500px] w-[90%] border-b-2 mx-auto" />
 
-              <div className="flex mx-auto items-center h-11">
-                  <div className="flex gap-5 font-sans text-gray-500 mx-auto">
+              {/* <div className="flex mx-auto items-center h-11">
+                  <div className="flex justify-center gap-5 font-sans text-gray-500 mx-auto">
                       <Link href="/AllProducts">All Products</Link>
-                      <a>plants pots</a>
+                      <Link href="/Plantspots" className="hover:text-primary transition duration-200">Plants Pots</Link>
                       <a>Ceramics</a>
                       <a>Tables</a>
                       <a>Chairs</a>
@@ -56,19 +56,19 @@ export default function About(){
                       <a>Tableware</a>
                       <a>Cutlery</a>
                   </div> 
-              </div>
+              </div> */}
         </header>
 
          
-         <main className="2xl:w-[1600px] w-[95%] h-[45vh] mx-auto flex items-center justify-center">
-              <div className="w-[80%] h-[76%] bg-white flex justify-between items-center">
-                      <p className="w-[44%] 2xl:text-3xl text-gray-700 font-sans flex ">
+         <main className="2xl:w-[1600px] w-[95%] h-[350px] mx-auto flex items-center justify-center">
+              <div className="w-[80%] sm:h-[76%] h-[60%] bg-white flex sm:flex-row flex-col justify-around sm:justify-between items-center">
+                      <p className="lg:w-[44%] w-[320px] 2xl:text-3xl text-2xl text-gray-700 font-sans flex ">
                       A brand built on the love of craftmanship,
                       quality and outstanding customer service
                       </p>
                   
                   <div>
-                      <button className="bg-gray-300 2xl:w-[200px] w-[120px] h-[7vh]"><a href="/AllProducts">ViewOurProducts</a></button>
+                      <button className="bg-gray-300 2xl:w-[200px] w-[150px] h-[7vh]"><a href="/AllProducts">ViewOurProducts</a></button>
                   </div>
               </div>
          </main>
@@ -78,20 +78,20 @@ export default function About(){
     {/* hero section */}
 
                <div className="h-[100vh] 2xl:h-[55vh] h-[60vh] 2xl:w-[1600px] mx-auto flex items-center ">
-                    <div className="w-[80%] h-[60vh]  mx-auto flex gap-3">
-                         <div className="w-[700px] h-full bg-primary flex ">
+                    <div className="sm:w-[80%] w-[95%] h-[60vh]  mx-auto flex sm:gap-3">
+                         <div className="sm:w-[700px] w-[300px] h-full bg-primary flex ">
        
                                <div className="w-full text-white pt-10 pl-10 flex flex-col 2xl:gap-[160px]">
                                   <div> 
-                                       <div className="w-[60%]  font-sans text-2xl ">
+                                       <div className="sm:w-[60%] w-[80%]  font-sans text-2xl ">
                                           <p className="2xl:text-3xl text:sm">The furniture brand for the future, with timeless designs</p>
                                         </div><br/>
                                         <div>
-                                           <button className="bg-gray-500 h-12 w-[21%]"><Link href="/AllProducts">View Collection</Link></button>
+                                           <button className="bg-gray-500 h-12 w-[120px]"><Link href="/AllProducts">View Collection</Link></button>
                                         </div>
                                    </div>
                                    <div>       
-                                        <div className="w-[80%] font-sans font-extralight 2xl:text-lg text-[10px]">
+                                        <div className="sm:w-[80%] w-[90%] sm:mt-0 mt-8 font-sans font-extralight sm:text-lg ">
                                            <p>A new era in eco friendly furniture with Avelon, the French luxury retail brand
                                               with nice fonts, tasteful colors and a beautiful way to display things digitally 
                                               using modern web technologies.
@@ -104,7 +104,8 @@ export default function About(){
                          </div>
 
                                                        <div className="w-[45%] h-auto ">
-                              <Image src="About1.png" alt="Description" className="w-[100%] h-[100%]  object-cover object-fill " />
+              
+              <Image width={500} height={500}  src="/About1.png" alt="Description" className="w-[100%] h-[100%]  object-cover object-fill " />
                               </div>
 
                     </div>
@@ -118,8 +119,8 @@ export default function About(){
            <div className="w-[99%] 2xl:w-[1600px] 2xl:h-[75vh] h-[550px] bg-white mx-auto flex mt-11">
 
 
-                  <div className="2xl:w-[52%] 2xl:h-[70vh]  w-[40%] h-[52vh] mt-12">
-                     <Image className="w-[100%] h-[100%] object-cover object-center object-fill"  src="About2.png" alt="menu" />
+                  <div className="sm:w-[52%] sm:h-[70vh]  w-[55%] h-[52vh] mt-12">
+                     <Image width={500} height={500} className="w-[100%] h-[100%] object-cover object-center object-fill"  src="/About2.png" alt="menu" />
                   </div>
 
 
@@ -132,7 +133,7 @@ export default function About(){
                                 <p className="2xl:text-sm text-sm text-gray-500" >Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p><br/>
                            </div>
 
-                           <div>     <button className="h-[6vh] 2xl:w-[18%] w-[30%] bg-gray-200 text-white">Get In Touch</button>   </div>
+                           <div>     <button className="h-[6vh] 2xl:w-[18%] w-[120px] bg-gray-200 text-white">Get In Touch</button>   </div>
 
                        </div>
                        
@@ -146,69 +147,63 @@ export default function About(){
 
 
 
-              <main className="mt-11">                
-                        <div className="w-[38%] font-sans 2xl:text-3xl text-sm text-gray-500 mx-auto p-10">
-                         <p >What makes our brand different</p>
-                        </div>
-               </main>
+              <main>
+        <div className="sm:w-[28%]  font-sans text-2xl text-gray-500 mx-auto p-10 hover:text-primary mx-auto sm:mt-0 mt-[100px]">
+          <p>What makes our brand different</p>
+        </div>
+      </main>
 
-           <div className="w-[90%] 2xl:w-[1600px] h-[23vh] mx-auto flex flex-wrap mx-auto justify-center gap-16 ">
+      <div className="w-[74%] h-[65%] hover:text-blue-800 grid 2xl:grid-rows-1 xl:grid-rows-1 lg:grid-rows-1 grid-rows-2 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 grid-cols-2 gap-10 mx-auto">
+        <div className="sm:w-[35%] h-[30%] ">
+          <div>
+            <FaTruckFast />
+          </div><br />
+          <h1>
+            Next day as standard
+          </h1><br />
+          <p className="2xl:text-sm  font-sans">
+            Order before 3pm and get your order
+            the next day as standard
+          </p>
+        </div>
 
-                    
-                         
-                         <div className="w-[15%] h-[30%] 2xl:text-lg text-[10px]">
-                              <div>
-                              <FaTruckFast />
-                              </div><br/>
-                              <h1>
-                              Next day as standard
-                              </h1><br/>
-                              <p className="text-sm font-sans 2xl:text-lg text-[10px]">
-                              Order before 3pm and get your order
-                              the next day as standard
-                              </p>
-                         </div>
-                    
-
-                         <div className="w-[15%] h-[30%] 2xl:text-lg text-[10px]">
-                              <div>
-                              <FaRegCheckCircle />
-                              </div><br/>
-                              <h1>
-                              Next day as standard
-                              </h1><br/>
-                              <p className="text-sm font-sans 2xl:text-lg text-[10px]">
-                              Order before 3pm and get your order
-                              the next day as standard
-                              </p>
-                         </div>
-                         <div className="w-[15%] h-[30%] 2xl:text-lg text-[7px]">
-                              <div>
-                              <MdOutlineInbox />
-                              </div><br/>
-                              <h1>
-                              Next day as standard
-                              </h1><br/>
-                              <p className="text-sm font-sans 2xl:text-lg text-[7px]" >
-                              Order before 3pm and get your order
-                              the next day as standard
-                              </p>
-                         </div>
-                         <div className="w-[15%] h-[50%] 2xl:text-lg text-[6px]">
-                              <div>
-                              <PiPlantDuotone />
-                              </div><br/>
-                              <h1>
-                              Next day as standard
-                              </h1><br/>
-                              <p className="text-sm font-sans 2xl:text-lg text-[7px]">
-                              Order before 3pm and get your order
-                              the next day as standard
-                              </p>
-                         </div>
-
-
-           </div>
+        <div className="sm:w-[35%] h-[30%] ">
+           <span>
+            <FaRegCheckCircle />
+           </span><br />
+           <h1>
+            Next day as standard
+           </h1><br />
+           <p className="2xl:text-sm  font-sans">
+            Order before 3pm and get your order
+            the next day as standard
+           </p>
+        </div>
+        <div className="sm:w-[35%] h-[30%] ">
+          <div>
+            <MdOutlineInbox />
+          </div><br />
+          <h1>
+            Next day as standard
+          </h1><br />
+          <p className="2xl:text-sm  font-sans">
+            Order before 3pm and get your order
+            the next day as standard
+          </p>
+        </div>
+        <div className="sm:w-[35%] h-[50%] ">
+          <div>
+            <PiPlantDuotone />
+          </div><br />
+          <h1>
+            Next day as standard
+          </h1><br />
+          <p className="2xl:text-sm  font-sans">
+            Order before 3pm and get your order
+            the next day as standard
+          </p>
+        </div>
+      </div>
 
 
 
@@ -218,16 +213,16 @@ export default function About(){
 
 
 
-              <div className="w-[99%] 2xl:w-[1600px] 2xl:h-[50vh] h-[400px] mx-auto flex justify-center items-center mt-12">
+              <div className="w-[99%] 2xl:w-[1600px] h-[440px] mx-auto flex justify-center items-center">
                   <div className="w-[100%] h-[80%] bg-gray-100 flex justify-center items-center">
-                      <div className="w-[55%] h-[80%] bg-white flex flex-col justify-around">
+                      <div className="sm:w-[55%] w-[85%] sm:h-[80%] h-[80%] bg-white flex flex-col justify-around">
                            <div className="flex justify-center flex-col items-center">
                                 <h1 className="2xl:text-3xl font-sans">Join the club and get the benefits</h1><br/>
                                 <p className="w-[50%] 2xl:text-lg text-[10px]">Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
                            </div>
                            <div className="flex gap-2 justify-center">
-                                <input className="h-[6vh] w-[30%] bg-gray-200" type="text" placeholder="your@gmail.com" />  
-                                <button className="h-[6vh] w-[18%] bg-primary text-white"><Link href="/Sign">Sign Up</Link></button>
+                                <input className="h-[46px] w-[30%] bg-gray-200" type="text" placeholder="your@gmail.com" />  
+                                <button className="h-[46px] w-[18%] bg-primary text-white"><Link href="/Sign">Sign Up</Link></button>
                            </div>
                       </div>
                   </div>
@@ -252,7 +247,7 @@ export default function About(){
                   </div>
 
 {/* social media */}
-              <div className="flex items-center gap-4 flex-wrap flex-col">
+              <div className="flex items-center gap-4 flex-wrap flex-col sm:ml-0 ml-16">
                  <h1 className="text-xl sm:text-2xl">Social Links</h1><br/>
                 <div className="flex flex-row gap-3">
                   <FaLinkedin className="text-2xl sm:text-3xl" />
